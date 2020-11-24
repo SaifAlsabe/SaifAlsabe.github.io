@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    height: 4rem;
+    color: rgb(201, 201, 201);
+    font-weight: bold;
+    font-size: large;
+}
+
+nav {
+    height: 100%;
+}
+
+.nav-links {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+}
+
+
+/* landing animation */
+
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.intro-text {
+    color: rgb(233, 233, 233);
+    z-index: 2;
+}
+
+.slider {
+    background: rgb(97, 105, 109);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    z-index: 2;
+}
+
+.hide {
+    background: black;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.hide p {
+    transform: translateY(100%);
+}
+
+
+/* sections */
+
+section {
+    padding: 5rem;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+
+/* home section */
+
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: x-large;
+}
+
+
+/* projects section */
+
+#projects {
+    min-height: 200vh;
+    background: rgb(6, 2, 26);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-link {
+    background-color: rgb(54, 110, 133);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 0.1rem solid rgb(255, 255, 255);
+}
+
+.project-link:hover {
+    border: 0.1rem solid rgb(6, 2, 26);
+}
+
+img {
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 1.5rem;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    width: 30rem;
+}
+
+.links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1vw;
+    transition: 0.3s opacity linear;
+    opacity: 0;
+}
+
+.links:hover {
+    opacity: 1;
+}
+
+
+/* contact section */
+
+#contact {
+    background: rgb(219, 219, 219);
+    font-size: large;
+}
+
+#contact a {
+    color: black;
+}
+
+.labeled-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.social {
+    width: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.clickable {
+    font-size: 1.6rem;
+    transition: 0.2s all linear;
+}
+
+.clickable:hover {
+    color: rgb(0, 163, 0);
+}
+
+
+/* footer */
+
+footer {
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(6, 2, 26);
+    color: white;
+}
+
+
+/* responsive */
+
+@media (max-width: 700px) {
+    .labeled-icons {
+        flex-direction: column;
+        min-height: 50vh;
+    }
+    .project {
+        flex-wrap: wrap;
+    }
+    .reverse {
+        flex-direction: column-reverse;
+    }
+    .image {
+        width: 100%;
+    }
+    .description {
+        min-height: 20rem;
+    }
+}

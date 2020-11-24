@@ -1,105 +1,176 @@
-<!DOCTYPE HTML>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>My Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Saif Alsabe</title>
 </head>
 
-<body class="is-preload">
-
-    <!-- Header -->
-    <header id="header">
-        <div class="inner">
-            <br>
-            <br>
-            <h1><strong>SAIF ALSABE</strong></h1>
-            <h3><i>Full Stack Web Developer</i></h3>
-        </div>
+<body>
+    <!-- nav bar -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Main -->
-    <div id="main">
+    <!-- landing animation -->
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <p class="text">Building</p>
+            </h1>
+            <h1 class="hide">
+                <p class="text">Smarter</p>
+            </h1>
+            <h1 class="hide">
+                <p class="text">Websites</p>
+            </h1>
+        </div>
+    </div>
 
-        <!-- One -->
-        <section id="one">
-            <header class="major">
-                <h2>About me</h2>
-            </header>
-            <p style="text-align: justify;">Hello! My name is Saif Alsabe and I'm a full stack web developer. My current projects are mainly focused on using React and Node, But I'm always learning new tools and technologies. My programming journey began when I was working on my senior
-                year robotics project as a mechanical engineer and I developed a passion for AI and machine learning with python, then I started programming and never looked back.
-                <br><br> Currently I am building personal projects every single day to sharpen my skills and learn new tools along the way. You can view a sample of my recent projects in the section below, and if interested in putting my skills to work
-                feel free to contact me.</p>
+    <div class="slider"></div>
+
+    <!-- main section -->
+    <main>
+
+        <!-- home -->
+        <section id="home">
+            <h1 class="big-text">Saif Alsabe<br>Full Stack Web Developer</h1>
+            <br><br>
+            <p>Hello! I'm a web developer currently based in Springfield, VA. Let's get in touch and create something special.
+            </p>
         </section>
 
-        <!-- Two -->
-        <section id="two">
-            <h2>Recent Work</h2>
-            <div class="row">
-                <article class="col-6 col-12-xsmall work-item">
-                    <a href="images/thumbs/weather.png" class="image fit thumb"><img src="images/thumbs/weather.png" alt="" /></a>
-                    <h3><a href="https://weather-station-api-app.herokuapp.com/">Weather Station</a></h3>
-                    <p>Technologies used: HTML, CSS, JavaScript, React, Redux, GSAP, Chart.js and Node. <br/> Check out the <a href="https://github.com/SaifAlsabe/weather-station">Code</a> at github.</p>
-                </article>
-                <article class="col-6 col-12-xsmall work-item">
-                    <a href="images/thumbs/carbon.png" class="image fit thumb"><img src="images/thumbs/carbon.png" alt="" /></a>
-                    <h3><a href="https://carbon-ecommerce.herokuapp.com/">Ecommerce Website</a></h3>
-                    <p>Technologies used: HTML, CSS, JavaScript, React, Redux, Node and MongoDB. <br/> Check out the <a href="https://github.com/SaifAlsabe/ecommerce-website">Code</a> at github.</p>
-                </article>
-                <article class="col-6 col-12-xsmall work-item">
-                    <a href="images/thumbs/linkus.png" class="image fit thumb"><img src="images/thumbs/linkus.png" alt="" /></a>
-                    <h3><a href="https://linkus-chat-app.herokuapp.com/">Chat Rooms Application</a></h3>
-                    <p>Technologies used: HTML, CSS, vanilla JavaScript, Node and Socket.IO <br/> Check out the <a href="https://github.com/SaifAlsabe/chat-app">Code</a> at github.</p>
-                </article>
+        <!-- projects -->
+        <section id="projects">
 
-        </section>
+            <h1 class="title">Projects</h1>
 
-        <!-- Three -->
-        <section id="three">
-            <h2>Get In Touch</h2>
-            <div class="row">
-                <div class="col-4 col-12-small">
-                    <ul class="labeled-icons">
-                        <li>
-                            <h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-                            6615 Comet Cir.<br /> Springfield, VA 22150<br /> United States
-                        </li>
-                        <li>
-                            <h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-                            571-400-9669
-                        </li>
-                        <li>
-                            <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-                            <a href="mailto: saif.alsabe@gmail.com">saif.alsabe@gmail.com</a>
-                        </li>
-                    </ul>
+            <div class="project reverse" data-aos="fade-left">
+                <div class="image">
+                    <img src="./thumbs/carbon.png">
+                    <div class="links">
+                        <a href="https://github.com/SaifAlsabe/ecommerce-website" class="project-link">Source Code</a>
+                        <a href="https://carbon-ecommerce.herokuapp.com/" class="project-link">Demo</a>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>Ecommerce Website</h3>
+                    <p>Create an account, update your profile info, add items to cart and start shopping online.</p>
+                    <p>Technologies used: HTML, CSS, JavaScript, React, Redux, Node, JWT and MongoDB.</p>
                 </div>
             </div>
+
+            <div class="project" data-aos="fade-right">
+                <div class="description">
+                    <h3>Weather Station</h3>
+                    <p>Uses <a href="https://openweathermap.org/api">openweathermap API</a> to display detailed weather forecast.</p>
+                    <p>Technologies used: HTML, CSS, JavaScript, React, Redux, GSAP, Chart.js and Node.</p>
+                </div>
+                <div class="image">
+                    <img src="./thumbs/weather.png">
+                    <div class="links">
+                        <a href="https://github.com/SaifAlsabe/weather-station" class="project-link">Source Code</a>
+                        <a href="https://weather-station-api-app.herokuapp.com/" class="project-link">Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project reverse" data-aos="fade-left">
+                <div class="image">
+                    <img src="./thumbs/linkus.png">
+                    <div class="links">
+                        <a href="https://github.com/SaifAlsabe/chat-app" class="project-link">Source Code</a>
+                        <a href="https://linkus-chat-app.herokuapp.com/" class="project-link">Demo</a>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>Chat Rooms Application</h3>
+                    <p>Join an existing chat room, create your own room, see online users and send messages using web sockets.</p>
+                    <p>Technologies used: HTML, CSS, vanilla JavaScript, Node and Socket.IO</p>
+                </div>
+
+            </div>
+
+            <div class="project" data-aos="fade-right">
+                <div class="description">
+                    <h3>Portfolio</h3>
+                    <p>Technologies used: HTML, CSS, JavaScript, GSAP.</p>
+                </div>
+                <div class="image">
+                    <img src="./thumbs/portfolio.png">
+                    <div class="links">
+                        <a href="https://github.com/SaifAlsabe/SaifAlsabe.github.io" class="project-link">Source Code</a>
+                        <a href="https://saifalsabe.github.io/" class="project-link">Demo (recursion)</a>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        </div>
+        <!-- contact -->
+        <section id="contact">
 
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="inner">
-                <ul class="icons">
-                    <li><a href="https://github.com/SaifAlsabe" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/saif-alsabe-55a713148/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-                    <li><a href="mailto: saif.alsabe@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
-            </div>
-        </footer>
+            <h2 class="title">Get in Touch</h2>
 
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.poptrox.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+            <br>
+            <br>
+
+            <ul class="labeled-icons">
+                <li>
+                    <div class="label">
+                        <i class="fas fa-home"></i>
+                        <span>Address</span>
+                    </div>
+                    <p>Springfield, VA<br /> United States</p>
+                </li>
+                <li>
+                    <div class="label">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </div>
+                    <div> <a href="mailto: saif.alsabe@gmail.com">saif.alsabe@gmail.com</a></div>
+                </li>
+                <li>
+                    <div class="label">
+                        <span>Follow Me</span>
+                    </div>
+                    <div class="social ">
+                        <a href="https://github.com/SaifAlsabe"><i class="fab fa-github clickable"></i></a>
+                        <a href="https://www.linkedin.com/in/saif-alsabe-55a713148/"><i
+                                class="fab fa-linkedin-in clickable"></i></a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>&copy; 2020. All rights reserved.</h3>
+    </footer>
+
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="app.js"></script>
+
+
 
 </body>
 
